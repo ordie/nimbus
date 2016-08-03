@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		03AA75871D50A108001627A2 /* MobileCoreServices.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 03AA75861D50A108001627A2 /* MobileCoreServices.framework */; };
 		2B960E8415AE41FC005714CA /* navigationbar.png in Resources */ = {isa = PBXBuildFile; fileRef = 2B960E8315AE41FC005714CA /* navigationbar.png */; };
 		3616212C16812222002A9078 /* AlignmentAttributedLabelViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 3616212A16812222002A9078 /* AlignmentAttributedLabelViewController.m */; };
 		3616212D16812222002A9078 /* AlignmentAttributedLabelViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 3616212B16812222002A9078 /* AlignmentAttributedLabelViewController.xib */; };
@@ -145,6 +146,7 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		03AA75861D50A108001627A2 /* MobileCoreServices.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = MobileCoreServices.framework; path = System/Library/Frameworks/MobileCoreServices.framework; sourceTree = SDKROOT; };
 		2B960E8315AE41FC005714CA /* navigationbar.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = navigationbar.png; path = Catalog/navigationbar.png; sourceTree = "<group>"; };
 		3616212916812222002A9078 /* AlignmentAttributedLabelViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AlignmentAttributedLabelViewController.h; sourceTree = "<group>"; };
 		3616212A16812222002A9078 /* AlignmentAttributedLabelViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AlignmentAttributedLabelViewController.m; sourceTree = "<group>"; };
@@ -419,6 +421,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				03AA75871D50A108001627A2 /* MobileCoreServices.framework in Frameworks */,
 				6658C38D18A910860080B319 /* Security.framework in Frameworks */,
 				6658C38B18A910820080B319 /* SystemConfiguration.framework in Frameworks */,
 				66B941541592E5EF00AEA1D2 /* CoreLocation.framework in Frameworks */,
@@ -612,6 +615,7 @@
 		6693C0EE158A63E600950D42 /* Frameworks */ = {
 			isa = PBXGroup;
 			children = (
+				03AA75861D50A108001627A2 /* MobileCoreServices.framework */,
 				6658C38C18A910860080B319 /* Security.framework */,
 				6658C38A18A910820080B319 /* SystemConfiguration.framework */,
 				66B941531592E5EF00AEA1D2 /* CoreLocation.framework */,
