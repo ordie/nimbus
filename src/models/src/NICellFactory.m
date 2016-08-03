@@ -219,3 +219,41 @@
 }
 
 @end
+
+
+@implementation NINibCellObject {
+    UINib *_cellNib;
+    NSString *_nibName;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibName userInfo:(id)userInfo {
+    if ((self = [super init])) {
+        _nibName = nibName;
+        _cellNib = [UINib nibWithNibName:nibName bundle:nil];
+        _userInfo = userInfo;
+    }
+    return self;
+}
+
+- (instancetype)initWithNibName:(NSString *)nibName {
+    return [self initWithNibName:nibName userInfo:nil];
+}
+
++ (instancetype)objectWithNibName:(NSString *)nibName userInfo:(id)userInfo {
+    return [[self alloc] initWithNibName:nibName userInfo:userInfo];
+}
+
++ (instancetype)objectWithNibName:(NSString *)nibName {
+    return [[self alloc] initWithNibName:nibName userInfo:nil];
+}
+
+- (UINib *)cellNib {
+    return _cellNib;
+}
+
+- (Class)cellNibClass {
+    return NSClassFromString(_nibName);
+}
+
+@end
+

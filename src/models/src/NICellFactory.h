@@ -247,12 +247,35 @@ _model.delegate = (id)[NICellFactory class];
 + (id)objectWithCellClass:(Class)cellClass userInfo:(id)userInfo;
 + (id)objectWithCellClass:(Class)cellClass;
 
-@property (nonatomic, strong) id userInfo;
-
-@end
-
 /**
  * An object that can be used to populate information in the cell.
  *
  * @fn NICellObject::userInfo
  */
+@property (nonatomic, strong) id userInfo;
+
+@end
+
+/**
+ * A light-weight implementation of the NINibCellObject protocol.
+ *
+ * This class is a nib version of NICellObject, it assume that the class name of the root object
+ * in the nib file is equal to the nib's file name.
+ *
+ @code
+ [tableContents addObject:[NINibCellObject objectWithNibName:@"LoadMoreCell"]];
+ @endcode
+ */
+@interface NINibCellObject : NSObject<NINibCellObject>
+
+// Designated initializer.
+- (instancetype)initWithNibName:(NSString *)nibName userInfo:(id)userInfo;
+- (instancetype)initWithNibName:(NSString *)nibName;
+
++ (instancetype)objectWithNibName:(NSString *)nibName userInfo:(id)userInfo;
++ (instancetype)objectWithNibName:(NSString *)nibName;
+
+@property (nonatomic, strong) id userInfo;
+
+@end
+
