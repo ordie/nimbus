@@ -18,4 +18,5 @@
 
 // All docs are in the .m.
 @interface CustomNibCollectionModelViewController : UICollectionViewController
+- (id)initWithCollectionViewLayout:(UICollectionViewLayout *)layout;
 @end

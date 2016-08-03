@@ -18,4 +18,5 @@
 
 // All docs are in the .m.
 @interface BasicInstantiationCollectionModelViewController : UICollectionViewController
+- (id)initWithCollectionViewLayout:(UICollectionViewLayout *)layout;
 @end
